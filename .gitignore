@@ -1,0 +1,14 @@
+# banco e artefatos do MLflow ficam fora do Git e são recriados pelo treino
+mlflow.db
+mlartifacts/
+mlruns/
+
+# dados brutos grandes são rastreados por hash no manifesto
+dados/brutos/
+
+resultados/_tmp/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/

@@ -1,0 +1,83 @@
+# Configuração única da solução. Toda mudança aqui gera outra versão de configuração.
+
+projeto:
+  nome: previsao-carga-sul
+  experimento: previsao-carga-sul
+  experimento_monitoramento: previsao-carga-sul-monitoramento
+  modelo_registrado: previsao-carga-sul
+  mlflow_uri: sqlite:///mlflow.db
+  pasta_artefatos: mlartifacts
+  responsavel: "[Nome 1] e [Nome 2]"
+
+dados:
+  versao: v1
+  arquivo: dados/processado/dataset_integrado.csv
+  dicionario: dados/processado/dicionario_integrado.csv
+  manifesto: dados/manifesto_dados.json
+
+pipeline:
+  horizonte_dias: 7
+  semente: 42
+  percentil_pico: 0.90
+  tolerancia_empate: 0.01
+  janelas:
+    treino: ["2017-01-01", "2023-12-31"]
+    validacao: ["2024-01-01", "2024-12-31"]
+    teste: ["2025-01-01", "2025-12-31"]
+
+parametros:
+  random_forest: &rf {n_estimators: 300, min_samples_leaf: 3, max_features: 0.5, n_jobs: -1}
+  random_forest_raso: &rf_raso {n_estimators: 300, min_samples_leaf: 10, max_features: 0.5, n_jobs: -1, max_depth: 8}
+  gradient_boosting: &gb {max_iter: 400, learning_rate: 0.05, max_leaf_nodes: 15, min_samples_leaf: 10}
+  prophet: &pr {sazonalidade: multiplicative, changepoint_prior_scale: 0.05}
+  prophet_aditivo: &pr_ad {sazonalidade: additive, changepoint_prior_scale: 0.05}
+
+runs:
+  - {id: R01, descricao: "Referência sazonal (semana anterior)", algoritmo: "Referência sazonal", parametros: {}, grupos: [], alvo: nivel}
+  - {id: R02, descricao: "Regressão Linear absoluta, sem temperatura", algoritmo: "Regressão Linear", parametros: {}, grupos: [calendario, historico], alvo: nivel}
+  - {id: R03, descricao: "Regressão Linear absoluta + temperatura", algoritmo: "Regressão Linear", parametros: {}, grupos: [calendario, historico, temperatura], alvo: nivel}
+  - {id: R04, descricao: "Regressão Linear relativa + temperatura, com regime", algoritmo: "Regressão Linear", parametros: {}, grupos: [calendario_relativo, historico_relativo, regime, temperatura], alvo: razao,
+     diagnostico: "erro de desenho (indicador de regime no modelo relativo)"}
+  - {id: R05, descricao: "Regressão Linear relativa + temperatura", algoritmo: "Regressão Linear", parametros: {}, grupos: [calendario_relativo, historico_relativo, temperatura], alvo: razao}
+  - {id: R06, descricao: "Random Forest absoluto + temperatura", algoritmo: "Random Forest", parametros: *rf, grupos: [calendario, historico, temperatura], alvo: nivel}
+  - {id: R07, descricao: "Random Forest relativo + temperatura", algoritmo: "Random Forest", parametros: *rf, grupos: [calendario_relativo, historico_relativo, temperatura], alvo: razao}
+  - {id: R08, descricao: "Random Forest relativo, sem temperatura", algoritmo: "Random Forest", parametros: *rf, grupos: [calendario_relativo, historico_relativo], alvo: razao}
+  - {id: R09, descricao: "Random Forest relativo + temperatura + EPE", algoritmo: "Random Forest", parametros: *rf, grupos: [calendario_relativo, historico_relativo, temperatura, epe], alvo: razao}
+  - {id: R10, descricao: "Gradient Boosting relativo + temperatura", algoritmo: "Gradient Boosting", parametros: *gb, grupos: [calendario_relativo, historico_relativo, temperatura], alvo: razao}
+  - {id: R11, descricao: "R05 sem dias de grande interrupção no treino", algoritmo: "Regressão Linear", parametros: {}, grupos: [calendario_relativo, historico_relativo, temperatura], alvo: razao,
+     excluir_treino: [flag_grande_interrupcao]}
+  - {id: R12, descricao: "R05 sem grandes interrupções e eventos conhecidos", algoritmo: "Regressão Linear", parametros: {}, grupos: [calendario_relativo, historico_relativo, temperatura], alvo: razao,
+     excluir_treino: [flag_grande_interrupcao, flag_evento_conhecido]}
+  - {id: R13, descricao: "R07 com árvores mais rasas", algoritmo: "Random Forest", parametros: *rf_raso, grupos: [calendario_relativo, historico_relativo, temperatura], alvo: razao}
+  - {id: R14, descricao: "Prophet sem retreino", algoritmo: "Prophet", parametros: *pr, grupos: [temperatura], alvo: nivel,
+     diagnostico: "sem retreino, não usa nenhum dado posterior a 2023"}
+  - {id: R15, descricao: "Prophet com retreino mensal", algoritmo: "Prophet", parametros: *pr, grupos: [temperatura], alvo: nivel, retreino: mensal}
+  - {id: R16, descricao: "Prophet com retreino mensal, sazonalidade aditiva", algoritmo: "Prophet", parametros: *pr_ad, grupos: [temperatura], alvo: nivel, retreino: mensal}
+
+monitoramento:
+  inicio: "2026-01-01"
+  fim: "2026-10-31"
+  janela_drift_meses: 3
+  variaveis_drift: [temp_media_sul, dif_temp_ref, rel_carga_sem1, razao_alvo, carga_mwmed]
+  variaveis_contexto: [carga_mwmed]
+  revisao_model_card: "2026-11-16"
+  limites:
+    dados:
+      pct_ausentes: {atencao: 0.0, alerta: 1.0}
+      dias_faltantes: {atencao: 0, alerta: 1}
+      valores_fora_da_faixa: {atencao: 0, alerta: 1}
+      psi: {atencao: 0.10, alerta: 0.25}
+      atraso_fonte_meses: {atencao: 2, alerta: 4}
+    modelo:
+      mape_pct: {atencao: 5.0, alerta: 6.4}
+      razao_mae_sobre_teste: {atencao: 1.25, alerta: 1.50}
+      vies_pct_da_carga: {atencao: 1.5, alerta: 3.0}
+      meses_seguidos_em_alerta_para_retreinar: 2
+    negocio:
+      ganho_minimo_sobre_referencia_pct: {atencao: 20.0, alerta: 10.0}
+      pct_dias_subestimou_5: {atencao: 10.0, alerta: 20.0}
+    governanca:
+      razao_mape_feriado_sobre_util: {atencao: 2.0, alerta: 3.0}
+      meses_desde_treino_ou_revalidacao: {atencao: 12, alerta: 18}
+      dias_sem_revisar_model_card: {atencao: 180, alerta: 365}
+      incidentes_abertos: {atencao: 1, alerta: 3}

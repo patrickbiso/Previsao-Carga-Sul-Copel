@@ -1,0 +1,10 @@
+# versões usadas na execução registrada (Python 3.13)
+pandas==2.2.3
+numpy==2.4.6
+scikit-learn==1.6.1
+prophet==1.5.0
+mlflow==3.18.0
+matplotlib==3.11.2
+joblib==1.6.0
+PyYAML==6.0.3
+scipy==1.18.1
