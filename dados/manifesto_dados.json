@@ -1,0 +1,148 @@
+{
+  "versoes": [
+    {
+      "versao": "v1",
+      "arquivo": "dados/processado/dataset_integrado.csv",
+      "sha256": "4ea3eb86cad81fc8b691e36d44b9088f8649a55ce2340b75294933c81cca8e91",
+      "linhas": 4322,
+      "colunas": 59,
+      "inicio": "2015-01-01",
+      "fim": "2026-10-31",
+      "dicionario_sha256": "e18314b4c7b84bffc231eeb5f67dac26bceac47e31394c13c528c3fa036d729b",
+      "registrado_em": "2026-11-16",
+      "origem": "notebooks/Etapa3_Integracao_Bases.ipynb, execução de 03/11/2026 21:58 UTC no Colab",
+      "observacao": "Primeira versão integrada. ONS até 31/10/2026, interrupções da ANEEL até 07/2026, EPE até 12/2025 e temperatura até 31/10/2026",
+      "fontes_brutas": [
+        {
+          "fonte": "ONS (Etapa 2)",
+          "arquivo": "dataset_tratado_sul.csv",
+          "sha256": "81e1d39d15d7cddd48de00ad70c6185dc8a775684a6d08570a1a082f770eaad5",
+          "tamanho_bytes": 392301,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "dataset tratado da Etapa 2"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2017.parquet",
+          "sha256": "3a10bb6a07fc8803ed73943cd38defba78ad3a9e28969a8b508a22b261641f36",
+          "tamanho_bytes": 73422044,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/92198821-d0a9-4279-985b-320e18c9e6c0/download/interrupcoes-energia-eletrica-2017.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2018.parquet",
+          "sha256": "dcba03661491584855ed74ad15b34f272d8f182d17137c8aad5c49539f958607",
+          "tamanho_bytes": 191217485,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/d669e835-0b8e-47e4-94b4-a3012b3abfc6/download/interrupcoes-energia-eletrica-2018.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2019.parquet",
+          "sha256": "bff7b26d61b48f6fcd1bd3aa89f5c595c51cfdba72a096a72026c5f537830b38",
+          "tamanho_bytes": 206870219,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/140e1704-9533-4004-b8ca-3d38cc8e4ba2/download/interrupcoes-energia-eletrica-2019.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2020.parquet",
+          "sha256": "6ad8f849e1dc80c30bc7bf7b32bb3f8c5941e6b227916d971293ed73cd933355",
+          "tamanho_bytes": 209400743,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/19b932c7-08a4-48a2-a073-ca339b13deb3/download/interrupcoes-energia-eletrica-2020.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2021.parquet",
+          "sha256": "efe4b6d74144c50458230732dea37a0d5dac749884c2fdcea72e438018ddd88e",
+          "tamanho_bytes": 212841509,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/011e0086-8b2f-4fbc-a32b-f7c0f7bc9957/download/interrupcoes-energia-eletrica-2021.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2022.parquet",
+          "sha256": "475212b331b8c2fdcf966d3c5d63b2a5269bbe41dd64b7b1faf3ad35df84b686",
+          "tamanho_bytes": 229345777,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/f40b948c-81a3-4d56-8e35-0af9c2533178/download/interrupcoes-energia-eletrica-2022.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2023.parquet",
+          "sha256": "18d8015fe52a495447b55335aaf94bdaa6569f22b470cdc911ae39c626182c94",
+          "tamanho_bytes": 246047631,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/ddc26540-cd8c-4eef-a1ad-a234d24ed9c4/download/interrupcoes-energia-eletrica-2023.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2024.parquet",
+          "sha256": "7da16b28d49db32847b09fd6faa3367f18c043d345f26a26f960bef25d6a6151",
+          "tamanho_bytes": 254346970,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/fc5ca52c-329c-4443-a2d6-08ccec711ade/download/interrupcoes-energia-eletrica-2024.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2025.parquet",
+          "sha256": "d4fae4ff9ca2c822e5ef26c3b775155e644685ec3a2cee3bce7974fcab2ca6ae",
+          "tamanho_bytes": 272507818,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/691de320-cb3d-471b-b9ec-8c1b86af8c83/download/interrupcoes-energia-eletrica-2025.parquet"
+        },
+        {
+          "fonte": "ANEEL interrupções",
+          "arquivo": "interrupcoes-energia-eletrica-2026.parquet",
+          "sha256": "53064794800a0dcff29784c03ccfa84c24f7c290f80c14889d0e950a19f82823",
+          "tamanho_bytes": 204708716,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/ccb25653-f07b-4f28-84c2-62a89d1f5a56/resource/cf722d0b-aa04-4681-bcd9-8a737e857182/download/interrupcoes-energia-eletrica-2026.parquet"
+        },
+        {
+          "fonte": "ANEEL DEC/FEC",
+          "arquivo": "indicadores-continuidade-coletivos-2020-2029.zip",
+          "sha256": "1d26f758497a4327b9c37207c5312d263b940aa04ea796301dc44f2db0272b62",
+          "tamanho_bytes": 72527554,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://dadosabertos.aneel.gov.br/dataset/d5f0712e-62f6-4736-8dff-9991f10758a7/resource/4493985c-baea-429c-9df5-3030422c71d7/download/indicadores-continuidade-coletivos-2020-2029.zip"
+        },
+        {
+          "fonte": "EPE",
+          "arquivo": "epe_consumo_mensal_por_classe.xlsx",
+          "sha256": "177310f1182e285d6a1fa6379a8c85163fdb6bb22c488083a18300b7c8a24133",
+          "tamanho_bytes": 1620134,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/Documents/CONSUMO%20MENSAL%20DE%20ENERGIA%20EL%C3%89TRICA%20POR%20CLASSE.xlsx"
+        },
+        {
+          "fonte": "Open-Meteo",
+          "arquivo": "openmeteo_curitiba.json",
+          "sha256": "824fbc65ae4d69232202febb135f883c6dac4d7b69f2f5e29faa2ceffaa45950",
+          "tamanho_bytes": 120627,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-25.43&longitude=-49.27&start_date=2015-01-01&end_date=2026-10-31&daily=temperature_2m_mean,temperature_2m_max,temperature_2m_min&timezone=America%2FSao_Paulo"
+        },
+        {
+          "fonte": "Open-Meteo",
+          "arquivo": "openmeteo_florianopolis.json",
+          "sha256": "3abb1a177138e2611396c1f1d4a29e7aba4265425149648d6695239ef55ae310",
+          "tamanho_bytes": 121293,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-27.6&longitude=-48.55&start_date=2015-01-01&end_date=2026-10-31&daily=temperature_2m_mean,temperature_2m_max,temperature_2m_min&timezone=America%2FSao_Paulo"
+        },
+        {
+          "fonte": "Open-Meteo",
+          "arquivo": "openmeteo_porto_alegre.json",
+          "sha256": "cc462d725477c6fdc93bc5620849bed62956e60a452df438612261201f246b21",
+          "tamanho_bytes": 120728,
+          "data_obtencao": "2026-11-03 21:58",
+          "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-30.03&longitude=-51.23&start_date=2015-01-01&end_date=2026-10-31&daily=temperature_2m_mean,temperature_2m_max,temperature_2m_min&timezone=America%2FSao_Paulo"
+        }
+      ]
+    }
+  ],
+  "descricao": "Versões do dataset integrado. O hash identifica o conteúdo exato de cada versão."
+}

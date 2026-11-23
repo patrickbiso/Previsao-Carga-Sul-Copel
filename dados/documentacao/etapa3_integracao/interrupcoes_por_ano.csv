@@ -1,0 +1,11 @@
+ano,origem,linhas_brasil,linhas_copel,siglas,esquema
+2017,parquet ANEEL,3474016,576206,COPEL-DIS           ,até 2025 (antigo)
+2018,parquet ANEEL,7506277,546284,COPEL-DIS           ,até 2025 (antigo)
+2019,parquet ANEEL,7827144,549261,COPEL-DIS           ,até 2025 (antigo)
+2020,parquet ANEEL,7877615,572137,COPEL-DIS           ,até 2025 (antigo)
+2021,parquet ANEEL,7810670,573019,COPEL-DIS           ,até 2025 (antigo)
+2022,parquet ANEEL,8495616,599868,COPEL-DIS           ,até 2025 (antigo)
+2023,parquet ANEEL,9177911,696833,COPEL-DIS           ,até 2025 (antigo)
+2024,parquet ANEEL,9211251,647447,COPEL-DIS           ,até 2025 (antigo)
+2025,parquet ANEEL,9715372,685479,COPEL-DIS           ,até 2025 (antigo)
+2026,parquet ANEEL,6078331,412721,COPEL-DIS           ,2026+ (novo)

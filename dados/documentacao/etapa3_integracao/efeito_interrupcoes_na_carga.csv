@@ -1,0 +1,9 @@
+grupo,dias,desvio_mediano_pct,desvio_mediano_sem_temp_pct
+50% dos dias com menos interrupções,1676,-0.04,-0.15
+de 50% a 90%,1341,0.49,0.18
+de 90% a 99%,302,0.89,-0.05
+1% com mais interrupções,34,0.3,-2.25
+"0,1% com mais interrupções",4,-3.62,-4.61
+20% ou mais dos consumidores do PR afetados,104,0.25,-1.7
+30% ou mais dos consumidores do PR afetados,26,-1.01,-2.6
+40% ou mais dos consumidores do PR afetados,8,-3.25,-3.75

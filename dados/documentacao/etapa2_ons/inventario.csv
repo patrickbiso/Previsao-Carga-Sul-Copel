@@ -1,0 +1,14 @@
+Item,Descrição
+Fonte,Portal de Dados Abertos do ONS — https://dados.ons.org.br/dataset/carga-energia
+Responsável / provedor,Operador Nacional do Sistema Elétrico (ONS) — autor e mantenedor
+Formato,"CSV (UTF-8, separador ';'); também disponível em XLSX e Parquet"
+Organização dos arquivos,"1 arquivo por ano (2000–2026), 27 arquivos"
+Período coberto,01/01/2000 a 06/10/2026
+Granularidade,"Diária, por subsistema do SIN"
+Frequência de atualização,"Diária (12h e 19h), segundo o portal; dados sujeitos a revisão (consistência recorrente)"
+Quantidade de registros (bruto),39.105
+Registros por subsistema,N: 9.776; NE: 9.776; S: 9.777; SE: 9.776
+Principais atributos,"id_subsistema, nom_subsistema, din_instante, val_cargaenergiamwmed"
+Unidade da medida,MWmed (megawatt médio)
+Licença / condições de uso,"Creative Commons Atribuição (CC-BY): permite reutilizar e adaptar, citando o ONS e informando as alterações; dados fornecidos 'como estão'"
+Data da obtenção,08/10/2026 02:43

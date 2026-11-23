@@ -1,0 +1,13 @@
+{
+  "ANO_INICIO_INVENTARIO": 2000,
+  "ANO_FIM": 2026,
+  "SUBSISTEMA_ALVO": "S",
+  "JANELA_INICIO": "2015-01-01",
+  "MAX_LACUNA_IMPUTAVEL": 3,
+  "LIMIAR_Z_ROBUSTO": 3.5,
+  "USAR_INMET": false,
+  "data_execucao": "2026-10-08T02:43:26",
+  "python": "3.13.16",
+  "pandas": "2.2.3",
+  "numpy": "2.1.3"
+}

@@ -1,0 +1,38 @@
+{
+  "ANOS_INTERRUPCOES": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "PADRAO_AGENTE": "COPEL",
+  "UF_DISTRIBUIDORA": "PR",
+  "DEFASAGEM_MENSAL": 2,
+  "LIMIAR_FRACAO_AFETADOS": 0.2,
+  "PERCENTIL_GRANDE_INTERRUPCAO": 0.99,
+  "DURACAO_MAX_PLAUSIVEL_H": 72,
+  "CIDADES": {
+    "curitiba": [
+      -25.43,
+      -49.27
+    ],
+    "florianopolis": [
+      -27.6,
+      -48.55
+    ],
+    "porto_alegre": [
+      -30.03,
+      -51.23
+    ]
+  },
+  "data_execucao": "2026-11-03T21:58:08",
+  "python": "3.13.18",
+  "pandas": "2.2.3",
+  "numpy": "2.4.6"
+}

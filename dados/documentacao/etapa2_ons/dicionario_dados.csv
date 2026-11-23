@@ -1,0 +1,19 @@
+Campo,Significado,Tipo,Domínio,Qualidade
+data,Dia de referência da medição,Date,2015-01-01 a 2026-10-06,Completo; calendário diário contínuo (2015-01-01 a 2026-10-06)
+id_subsistema,Código do subsistema do SIN (origem: ONS),String,S,Completo
+nom_subsistema,Nome do subsistema (origem: ONS),String,Sul,Completo
+carga_mwmed,"Carga média de energia no dia, em MWmed (variável alvo; origem: val_cargaenergiamwmed)",Float,7.261 a 19.247,0.00% ausentes; 0.02% imputados; 7.05% sinalizados como atípicos
+dia_semana,"Dia da semana (0 = segunda, 6 = domingo)",Integer,0 a 6,Completo
+nome_dia_semana,Dia da semana abreviado,String,"dom, qua, qui, sab, seg, sex, ter",Completo
+fim_de_semana,1 se sábado ou domingo,Integer (0/1),"0, 1",Completo
+mes,Mês do ano,Integer,1 a 12,Completo
+ano,Ano,Integer,2015 a 2026,Completo
+estacao,Estação do ano (hemisfério sul),String,"inverno, outono, primavera, verao",Completo
+feriado,1 se feriado nacional ou Carnaval,Integer (0/1),"0, 1",Completo
+nome_feriado,"Nome do feriado, vazio se dia comum",String,13 valores distintos,Preenchido apenas em feriados
+regime_metodologico,"Metodologia de apuração do ONS vigente no dia (1, 2 ou 3)",Integer,"1, 2, 3",Completo
+flag_ausente_original,"1 se o dia não tinha valor válido na origem (ausente, nulo, não numérico ou ≤ 0)",Integer (0/1),"0, 1",Completo
+flag_imputado,1 se a carga foi estimada por interpolação,Integer (0/1),"0, 1",Completo
+flag_atipico,1 se o dia foi detectado como atípico (outlier),Integer (0/1),"0, 1",Completo
+flag_evento_conhecido,1 se o dia está em um evento excepcional conhecido,Integer (0/1),"0, 1",Completo
+arquivo_origem,Arquivo anual do ONS de onde veio o registro (rastreabilidade),String,"CARGA_ENERGIA_2015.csv, CARGA_ENERGIA_2016.csv, CARGA_ENERGIA_2017.csv, CARGA_ENERGIA_2018.csv, CARGA_ENERGIA_2019.csv, CARGA_ENERGIA_2020.csv, CARGA_ENERGIA_2021.csv, CARGA_ENERGIA_2022.csv, CARGA_ENERGIA_2023.csv, CARGA_ENERGIA_2024.csv, CARGA_ENERGIA_2025.csv, CARGA_ENERGIA_2026.csv",Completo

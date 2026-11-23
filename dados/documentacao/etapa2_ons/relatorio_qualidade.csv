@@ -1,0 +1,31 @@
+dimensao,verificacao,escopo,ocorrencias,total_avaliado,percentual,observacao
+Completude,Valores ausentes em 'id_subsistema',Base inteira,0.0,39105.0,0.0,
+Completude,Valores ausentes em 'nom_subsistema',Base inteira,0.0,39105.0,0.0,
+Completude,Valores ausentes em 'din_instante',Base inteira,0.0,39105.0,0.0,
+Completude,Valores ausentes em 'val_cargaenergiamwmed',Base inteira,13.0,39105.0,0.033,
+Completude,Dias sem registro no calendário — subsistema N,Subsistema N,0.0,9776.0,0.0,01/01/2000–06/10/2026
+Completude,Dias sem registro no calendário — subsistema NE,Subsistema NE,0.0,9776.0,0.0,01/01/2000–06/10/2026
+Completude,Dias sem registro no calendário — subsistema S,Subsistema S,0.0,9776.0,0.0,01/01/2000–06/10/2026
+Completude,Dias sem registro no calendário — subsistema SE,Subsistema SE,0.0,9776.0,0.0,01/01/2000–06/10/2026
+Validade,Carga não numérica (texto não convertível),Base inteira,0.0,39092.0,0.0,
+Validade,Carga menor ou igual a zero,Base inteira,0.0,39092.0,0.0,fisicamente impossível
+Validade,Data não reconhecível,Base inteira,0.0,39105.0,0.0,
+Validade,Data no futuro (após a data de execução),Base inteira,0.0,39105.0,0.0,
+Validade,"Código de subsistema fora de {N, NE, S, SE}",Base inteira,0.0,39105.0,0.0,"códigos encontrados: N, NE, S, SE"
+Unicidade,Registros duplicados idênticos (subsistema + data + valor),Base inteira,0.0,39105.0,0.0,
+Unicidade,Chaves (subsistema + data) com valores diferentes,Base inteira,0.0,39104.0,0.0,duplicata conflitante
+Unicidade,Chaves repetidas em que uma linha tem valor e outra está vazia,Base inteira,1.0,39104.0,0.003,S em 02/02/2013
+Consistência,Arquivos anuais com colunas diferentes do padrão,Arquivos,0.0,27.0,0.0,
+Consistência,Arquivos anuais com formato de data diferente do padrão,Arquivos,1.0,27.0,3.704,padrão '%Y-%m-%d'; diferente em: 2013 ('%Y-%m-%d %H:%M:%S')
+Consistência,Códigos de subsistema com mais de um nome,Base inteira,0.0,4.0,0.0,N=Norte; NE=Nordeste; S=Sul; SE=Sudeste/Centro-Oeste
+Consistência,Registros com data fora do ano do arquivo de origem,Base inteira,0.0,39105.0,0.0,
+Consistência,Degrau na série — Inclusão de usinas não despachadas (mar/2021),Subsistema S,,,6.52,"variação de +2,11% entre as 4 semanas antes e depois do marco, contra -4,42% nas mesmas datas de 2019, 2018, 2017: efeito estimado de +6,52 p.p."
+Consistência,Degrau na série — Inclusão de MMGD (abr/2023),Subsistema S,,,5.96,"variação de +2,59% entre as 4 semanas antes e depois do marco, contra -3,37% nas mesmas datas de 2022, 2021, 2019: efeito estimado de +5,96 p.p."
+Atualidade,Defasagem do último dado — subsistema N,Subsistema N,2.0,,,último dia: 06/10/2026; defasagem de 2 dia(s)
+Atualidade,Defasagem do último dado — subsistema NE,Subsistema NE,2.0,,,último dia: 06/10/2026; defasagem de 2 dia(s)
+Atualidade,Defasagem do último dado — subsistema S,Subsistema S,2.0,,,último dia: 06/10/2026; defasagem de 2 dia(s)
+Atualidade,Defasagem do último dado — subsistema SE,Subsistema SE,2.0,,,último dia: 06/10/2026; defasagem de 2 dia(s)
+Acurácia,Dias atípicos (|z robusto| > 3.5) — mantidos e sinalizados,Subsistema S,834.0,9773.0,8.534,
+Acurácia,Evento conhecido: início da pandemia (23/03–31/05/2020 vs 2019),Subsistema S,,,-6.51,"carga média -6,51% em relação às mesmas datas de 2019 (queda esperada)"
+Acurácia,Evento conhecido: apagão de 15/08/2023 (vs mesmo dia da semana nas 4 semanas anteriores),Subsistema S,,,-7.32,"carga do dia -7,32% em relação à mediana do mesmo dia da semana nas 4 semanas anteriores"
+Acurácia,"Dias atípicos com causa conhecida (feriado, fim de ano ou evento)",Subsistema S,439.0,834.0,52.638,"outros (ex.: ondas de calor/frio, pontes de feriado): 395; feriado nacional / Carnaval: 255; período de Natal e Ano-Novo (20/12–07/01): 176; evento conhecido: 8"
