@@ -1,0 +1,3 @@
+data,acao,versao,aprovado_por,motivo,run_de_origem,janela_treino,versao_dados,versao_codigo,versao_config,MAE_teste,MAPE_teste,sha256_arquivo,versao_anterior
+2026-11-16 20:03:15,promovido a produção,1,Equipe do projeto,Primeira versão. Escolhida pela regra de validação e confirmada no teste de 2025,R12,2017-01-01 a 2024-12-31,v1@4ea3eb86cad8,dc124bad9218,183fdc4dc532,555.1,4.06,ffac524933a6,
+2026-11-16 20:03:23,revalidado e mantido em produção,1,Equipe do projeto,"Monitoramento de 2026. Candidato treinado até 2025 com MAE de 521 MWmed contra 523 da versão em produção, diferença dentro da tolerância de 1%",R12,2017-01-01 a 2024-12-31,v1@4ea3eb86cad8,dc124bad9218,183fdc4dc532,555.1,4.06,ffac524933a6,
