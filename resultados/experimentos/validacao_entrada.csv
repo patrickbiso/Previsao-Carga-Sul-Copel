@@ -1,0 +1,12 @@
+verificacao,resultado,detalhe
+Hash do arquivo confere com o manifesto de dados,OK,versão v1@4ea3eb86cad8
+Colunas obrigatórias presentes,OK,14 colunas
+Uma linha por dia (sem datas repetidas),OK,0 datas repetidas
+Calendário contínuo,OK,0 dias ausentes no intervalo
+Alvo preenchido,OK,0 dias sem carga
+Carga em faixa plausível (3 a 30 mil MWmed),OK,0 dias fora da faixa
+Temperatura em faixa plausível (-5 a 40 °C),OK,"mín 6.8, máx 28.4"
+Janela de treino coberta pelos dados,OK,2556 de 2556 dias
+Janela de validacao coberta pelos dados,OK,366 de 366 dias
+Janela de teste coberta pelos dados,OK,365 de 365 dias
+Dicionário de dados disponível,OK,59 campos descritos
