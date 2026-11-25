@@ -1,0 +1,6 @@
+fonte,ultimo_dado,atraso_meses,uso,situacao
+"ONS, carga diária",2026-10-31,0,alvo e histórico do modelo,OK
+"Open-Meteo, temperatura",2026-10-31,0,variável do modelo,OK
+"ANEEL, interrupções",2026-07-31,3,escolha dos dias de treino,ATENÇÃO
+"ANEEL, DEC e FEC",2026-07-31,3,validação,ATENÇÃO
+"EPE, consumo por classe",2025-12-31,10,"análise, fora do modelo em produção",ALERTA

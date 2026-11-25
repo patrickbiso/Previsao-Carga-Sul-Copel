@@ -1,0 +1,121 @@
+mes,dimensao,indicador,valor,limite_atencao,limite_alerta,situacao,acao
+2026-01,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-01,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-01,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-01,modelo,MAPE,5.4602,5.0,6.4,ATENÇÃO,investigar os dias de maior erro e avaliar retreino
+2026-01,modelo,razao_mae_sobre_teste,1.502,1.25,1.5,ALERTA,comparar com o modelo retreinado e avaliar troca
+2026-01,modelo,vies_pct_da_carga,4.3299,1.5,3.0,ALERTA,verificar erro sistemático e avaliar retreino
+2026-01,negocio,ganho_sobre_referencia_pct,52.9784,20.0,10.0,OK,
+2026-01,negocio,pct_dias_subestimou_5,38.7097,10.0,20.0,ALERTA,avisar o planejamento e usar margem de segurança
+2026-01,dados,psi_temp_media_sul,0.032,0.1,0.25,OK,
+2026-01,dados,psi_dif_temp_ref,0.0227,0.1,0.25,OK,
+2026-01,dados,psi_rel_carga_sem1,0.1277,0.1,0.25,ATENÇÃO,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-01,dados,psi_razao_alvo,0.0636,0.1,0.25,OK,
+2026-02,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-02,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-02,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-02,modelo,MAPE,3.7472,5.0,6.4,OK,
+2026-02,modelo,razao_mae_sobre_teste,1.0786,1.25,1.5,OK,
+2026-02,modelo,vies_pct_da_carga,3.1737,1.5,3.0,ALERTA,verificar erro sistemático e avaliar retreino
+2026-02,negocio,ganho_sobre_referencia_pct,28.3503,20.0,10.0,OK,
+2026-02,negocio,pct_dias_subestimou_5,0.0,10.0,20.0,OK,
+2026-02,dados,psi_temp_media_sul,0.0381,0.1,0.25,OK,
+2026-02,dados,psi_dif_temp_ref,0.0475,0.1,0.25,OK,
+2026-02,dados,psi_rel_carga_sem1,0.0666,0.1,0.25,OK,
+2026-02,dados,psi_razao_alvo,0.0317,0.1,0.25,OK,
+2026-03,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-03,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-03,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-03,modelo,MAPE,2.9838,5.0,6.4,OK,
+2026-03,modelo,razao_mae_sobre_teste,0.8765,1.25,1.5,OK,
+2026-03,modelo,vies_pct_da_carga,1.5666,1.5,3.0,ATENÇÃO,verificar erro sistemático e avaliar retreino
+2026-03,negocio,ganho_sobre_referencia_pct,54.9449,20.0,10.0,OK,
+2026-03,negocio,pct_dias_subestimou_5,6.4516,10.0,20.0,OK,
+2026-03,dados,psi_temp_media_sul,0.0652,0.1,0.25,OK,
+2026-03,dados,psi_dif_temp_ref,0.0354,0.1,0.25,OK,
+2026-03,dados,psi_rel_carga_sem1,0.0601,0.1,0.25,OK,
+2026-03,dados,psi_razao_alvo,0.0802,0.1,0.25,OK,
+2026-04,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-04,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-04,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-04,modelo,MAPE,2.7492,5.0,6.4,OK,
+2026-04,modelo,razao_mae_sobre_teste,0.7167,1.25,1.5,OK,
+2026-04,modelo,vies_pct_da_carga,1.0472,1.5,3.0,OK,
+2026-04,negocio,ganho_sobre_referencia_pct,61.3258,20.0,10.0,OK,
+2026-04,negocio,pct_dias_subestimou_5,0.0,10.0,20.0,OK,
+2026-04,dados,psi_temp_media_sul,0.1138,0.1,0.25,ATENÇÃO,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-04,dados,psi_dif_temp_ref,0.0131,0.1,0.25,OK,
+2026-04,dados,psi_rel_carga_sem1,0.0803,0.1,0.25,OK,
+2026-04,dados,psi_razao_alvo,0.0256,0.1,0.25,OK,
+2026-05,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-05,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-05,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-05,modelo,MAPE,5.7285,5.0,6.4,ATENÇÃO,investigar os dias de maior erro e avaliar retreino
+2026-05,modelo,razao_mae_sobre_teste,1.28,1.25,1.5,ATENÇÃO,comparar com o modelo retreinado e avaliar troca
+2026-05,modelo,vies_pct_da_carga,1.2614,1.5,3.0,OK,
+2026-05,negocio,ganho_sobre_referencia_pct,24.2989,20.0,10.0,OK,
+2026-05,negocio,pct_dias_subestimou_5,19.3548,10.0,20.0,ATENÇÃO,avisar o planejamento e usar margem de segurança
+2026-05,dados,psi_temp_media_sul,0.3259,0.1,0.25,ALERTA,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-05,dados,psi_dif_temp_ref,0.0115,0.1,0.25,OK,
+2026-05,dados,psi_rel_carga_sem1,0.1976,0.1,0.25,ATENÇÃO,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-05,dados,psi_razao_alvo,0.0077,0.1,0.25,OK,
+2026-06,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-06,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-06,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-06,modelo,MAPE,3.9012,5.0,6.4,OK,
+2026-06,modelo,razao_mae_sobre_teste,0.9437,1.25,1.5,OK,
+2026-06,modelo,vies_pct_da_carga,1.7337,1.5,3.0,ATENÇÃO,verificar erro sistemático e avaliar retreino
+2026-06,negocio,ganho_sobre_referencia_pct,18.1923,20.0,10.0,ATENÇÃO,rever se o modelo ainda se justifica frente à regra simples
+2026-06,negocio,pct_dias_subestimou_5,23.3333,10.0,20.0,ALERTA,avisar o planejamento e usar margem de segurança
+2026-06,dados,psi_temp_media_sul,0.4087,0.1,0.25,ALERTA,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-06,dados,psi_dif_temp_ref,0.2538,0.1,0.25,ALERTA,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-06,dados,psi_rel_carga_sem1,0.0296,0.1,0.25,OK,
+2026-06,dados,psi_razao_alvo,0.0763,0.1,0.25,OK,
+2026-07,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-07,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-07,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-07,modelo,MAPE,3.0978,5.0,6.4,OK,
+2026-07,modelo,razao_mae_sobre_teste,0.7308,1.25,1.5,OK,
+2026-07,modelo,vies_pct_da_carga,2.6308,1.5,3.0,ATENÇÃO,verificar erro sistemático e avaliar retreino
+2026-07,negocio,ganho_sobre_referencia_pct,2.8103,20.0,10.0,ALERTA,rever se o modelo ainda se justifica frente à regra simples
+2026-07,negocio,pct_dias_subestimou_5,0.0,10.0,20.0,OK,
+2026-07,dados,psi_temp_media_sul,0.4006,0.1,0.25,ALERTA,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-07,dados,psi_dif_temp_ref,0.0738,0.1,0.25,OK,
+2026-07,dados,psi_rel_carga_sem1,0.0789,0.1,0.25,OK,
+2026-07,dados,psi_razao_alvo,0.0228,0.1,0.25,OK,
+2026-08,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-08,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-08,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-08,modelo,MAPE,3.4614,5.0,6.4,OK,
+2026-08,modelo,razao_mae_sobre_teste,0.8346,1.25,1.5,OK,
+2026-08,modelo,vies_pct_da_carga,1.2853,1.5,3.0,OK,
+2026-08,negocio,ganho_sobre_referencia_pct,-16.4473,20.0,10.0,ALERTA,rever se o modelo ainda se justifica frente à regra simples
+2026-08,negocio,pct_dias_subestimou_5,19.3548,10.0,20.0,ATENÇÃO,avisar o planejamento e usar margem de segurança
+2026-08,dados,psi_temp_media_sul,0.0246,0.1,0.25,OK,
+2026-08,dados,psi_dif_temp_ref,0.0581,0.1,0.25,OK,
+2026-08,dados,psi_rel_carga_sem1,0.0155,0.1,0.25,OK,
+2026-08,dados,psi_razao_alvo,0.0269,0.1,0.25,OK,
+2026-09,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-09,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-09,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-09,modelo,MAPE,4.2321,5.0,6.4,OK,
+2026-09,modelo,razao_mae_sobre_teste,0.9875,1.25,1.5,OK,
+2026-09,modelo,vies_pct_da_carga,0.766,1.5,3.0,OK,
+2026-09,negocio,ganho_sobre_referencia_pct,42.9182,20.0,10.0,OK,
+2026-09,negocio,pct_dias_subestimou_5,10.0,10.0,20.0,OK,
+2026-09,dados,psi_temp_media_sul,0.0443,0.1,0.25,OK,
+2026-09,dados,psi_dif_temp_ref,0.0539,0.1,0.25,OK,
+2026-09,dados,psi_rel_carga_sem1,0.031,0.1,0.25,OK,
+2026-09,dados,psi_razao_alvo,0.0933,0.1,0.25,OK,
+2026-10,dados,dias_faltantes,0.0,0.0,1.0,OK,
+2026-10,dados,pct_ausentes,0.0,0.0,1.0,OK,
+2026-10,dados,valores_fora_da_faixa,0.0,0.0,1.0,OK,
+2026-10,modelo,MAPE,1.9723,5.0,6.4,OK,
+2026-10,modelo,razao_mae_sobre_teste,0.4766,1.25,1.5,OK,
+2026-10,modelo,vies_pct_da_carga,0.6376,1.5,3.0,OK,
+2026-10,negocio,ganho_sobre_referencia_pct,52.8858,20.0,10.0,OK,
+2026-10,negocio,pct_dias_subestimou_5,3.2258,10.0,20.0,OK,
+2026-10,dados,psi_temp_media_sul,0.1174,0.1,0.25,ATENÇÃO,conferir se o erro subiu no mesmo período e avaliar retreino
+2026-10,dados,psi_dif_temp_ref,0.0985,0.1,0.25,OK,
+2026-10,dados,psi_rel_carga_sem1,0.0621,0.1,0.25,OK,
+2026-10,dados,psi_razao_alvo,0.0126,0.1,0.25,OK,
