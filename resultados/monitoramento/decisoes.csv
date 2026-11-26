@@ -1,0 +1,11 @@
+mes,pior_situacao,meses_seguidos_com_erro_em_alerta,decisao
+2026-01,ALERTA,1,investigar o modelo
+2026-02,ALERTA,0,investigar o modelo
+2026-03,ATENÇÃO,0,manter e acompanhar
+2026-04,ATENÇÃO,0,manter e acompanhar
+2026-05,ALERTA,0,"investigar o modelo, drift com piora do erro"
+2026-06,ALERTA,0,investigar o modelo
+2026-07,ALERTA,0,investigar o modelo
+2026-08,ALERTA,0,investigar o modelo
+2026-09,OK,0,manter
+2026-10,ATENÇÃO,0,manter e acompanhar
